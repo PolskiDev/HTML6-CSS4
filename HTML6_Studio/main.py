@@ -96,7 +96,7 @@ repl = [
     ['\'.*?\'', string],
     #['//.*?$', comments],
     ['([0-9]|h1|h2|h3|h4|h5|p |px|center|bold|italic|normal)', digits],
-    ['(link|img|input|orlist|unlist|endorlist|endunlist|item|enditem|@import|text)', secondary],
+    ['(link|endlink|img|input|orlist|unlist|endorlist|endunlist|item|enditem|@import|text)', secondary],
     ['(content=|class=|type=|url=|src=|width=|height=|action=|method=|href=|center|right|left|normal|endcenter|label=)', modifiers],
     
     ['(class|element|on)', modifiers],

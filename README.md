@@ -5,6 +5,12 @@ HTML6 is a markup language that focus on simplify HTML5's syntax, avoiding "<" a
 <br>
 For CSS 4 documentation, see: [README-CSS4.md](README-CSS4.md)  
 For HTML6 Studio IDE documentation, see: [README-IDE.md](README-IDE.md)  
+<br>
+
+Copy HTML 6 / CSS 4 VSCode extension `./html6-vse` to:  
+**Linux/macOS**: `~/.vscode/extensions/html6-vse`  
+**Windows**: `%USERPROFILE%\.vscode\extensions\html6-vse`  
+
 <br><br>
 
 <center><img src="html6.png" width="40%"></center>  

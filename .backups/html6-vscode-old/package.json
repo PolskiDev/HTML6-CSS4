@@ -1,8 +1,8 @@
 {
-    "name": "htmlsix",
-    "displayName": "HTML 6",
-    "description": "A simplified HTML",
-    "version": "0.1",
+    "name": "htmlsx",
+    "displayName": "HTML6",
+    "description": "HTML and CSS with renewed faces",
+    "version": "1.0",
     "icon": "./html6.png",
     "engines": {
         "vscode": "^1.60.0"
@@ -12,15 +12,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "htmlsix",
-            "aliases": ["HTML 6", "htmlsix"],
+            "id": "htmlsx",
+            "aliases": ["HTMLSX", "htmlsx"],
             "extensions": [".html6"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "htmlsix",
+            "language": "htmlsx",
             "scopeName": "source.html6",
-            "path": "./syntaxes/html6.tmLanguage.json"
+            "path": "./syntaxes/htmlsx.tmLanguage.json"
         }]
     }
 }

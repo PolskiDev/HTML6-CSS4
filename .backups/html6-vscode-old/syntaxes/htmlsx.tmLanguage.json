@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "A simplified HTML",
+	"name": "htmlsx",
 	"patterns": [
 		{
 			"include": "#keywords"
@@ -21,23 +21,23 @@
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.htmlsix",
-				"match": "\\b(html|head|body|endhtml|endbody|endhead|title|link|h1|h2|h3|h4|h5|p|img|div|nav|enddiv|endnav|form|endform|input|orlist|unlist|endorlist|endunlist|item|enditem|import|text)\\b"
+				"name": "keyword.control.htmlsx",
+				"match": "\\b(document|html|head|body|endhtml|endbody|endhead|title|div|nav|enddiv|endnav|form|endform|hover|visited|active|class|element|on)\\b"
 			}]
 		},
 		"comments": {
             "patterns": [{
-                "name": "comment.block.documentation.htmlsix",
+                "name": "comment.block.documentation.htmlsx",
                 "begin": "//",
                 "beginCaptures": {
                     "0": {
-                        "name": "punctuation.definition.comment.begin.htmlsix"
+                        "name": "punctuation.definition.comment.begin.htmlsx"
                     }
                 },
                 "end": "\n",
                 "endCaptures": {
                     "0": {
-                        "name": "punctuation.definition.comment.end.htmlsix"
+                        "name": "punctuation.definition.comment.end.htmlsx"
                     }
                 },
                 "patterns": [{
@@ -46,40 +46,40 @@
 			}]
 		},
 		"strings": {
-			"name": "string.quoted.double.htmlsix",
+			"name": "string.quoted.double.htmlsx",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.htmlsix",
+					"name": "constant.character.escape.htmlsx",
 					"match": "\\\\."
 				}
 			]
 		},
 		"numbers": {
             "patterns": [{
-                "name": "constant.numeric.exponential.htmlsix",
+                "name": "constant.numeric.exponential.htmlsx",
                 "match": "([0-9]+(_?))+(\\.)([0-9]+[eE][-+]?[0-9]+)"
             }, {
-                "name": "constant.numeric.float.htmlsix",
+                "name": "constant.numeric.float.htmlsx",
                 "match": "([0-9]+(_?))+(\\.)([0-9]+)"
             }, {
-                "name": "constant.numeric.binary.htmlsix",
+                "name": "constant.numeric.binary.htmlsx",
                 "match": "(?:0b)(?:(?:[0-1]+)(?:_?))+"
             }, {
-                "name": "constant.numeric.octal.htmlsix",
+                "name": "constant.numeric.octal.htmlsx",
                 "match": "(?:0o)(?:(?:[0-7]+)(?:_?))+"
             }, {
-                "name": "constant.numeric.hex.htmlsix",
+                "name": "constant.numeric.hex.htmlsx",
                 "match": "(?:0x)(?:(?:[0-9a-fA-F]+)(?:_?))+"
             }, {
-                "name": "constant.numeric.integer.htmlsix",
-                "match": "(?:(?:[0-9]+)(?:[_]?))+"
+                "name": "constant.numeric.integer.htmlsx",
+                "match": "(?:(?:[0-9]+)(?:[_]?))+(h1|h2|h3|h4|h5|px|center|bold|italic|normal)"
             }]
         },
         "storage": {
-            "name": "storage.modifier.htmlsix",
-            "match": "\\b(content|class|type|url|src|width|height|action|method|href|center|label)\\b"
+            "name": "storage.modifier.htmlsx",
+            "match": "\\b(link|img|input|orlist|unlist|endorlist|endunlist|item|enditem|@import|text|alignment|text-color|bg-color|font-weight|font|margin-all|margin-top|margin-bottom|margin-left|margin-right|padding-all|padding-top|padding-bottom|padding-left|padding-right|max-width|max-height|bg-img)\\b"
         }
 	},
 	"scopeName": "source.html6"

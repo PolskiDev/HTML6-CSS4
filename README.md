@@ -1,10 +1,10 @@
 # HTML 6 - Gabriel Margarido
 Version 6.0<br>
 
-HTML6 is a markup language that focus on simplify HTML5's syntax, avoiding "<" and ">" characters and speedly transpiling HTML6 source code to HTML5 target code, to use it on the Web Browser or even [Electron.js](http://electronjs.org)
+HTML6 is a markup language that focus on simplify HTML5's syntax, avoiding "<" and ">" characters and speedly transpiling HTML6 source code to HTML5 target code, to use it on the Web Browser or even [Electron.js](http://electronjs.org)  
 <br>
-For CSS 4 documentation, see: [README-CSS4.md](README-CSS4.md)
-For HTML6 Studio IDE documentation, see: [README-IDE.md](README-IDE.md)
+For CSS 4 documentation, see: [README-CSS4.md](README-CSS4.md)  
+For HTML6 Studio IDE documentation, see: [README-IDE.md](README-IDE.md)  
 <br><br>
 
 <center><img src="html6.png" width="40%"></center>

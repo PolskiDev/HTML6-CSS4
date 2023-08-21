@@ -7,12 +7,12 @@ For CSS 4 documentation, see: [README-CSS4.md](README-CSS4.md)
 For HTML6 Studio IDE documentation, see: [README-IDE.md](README-IDE.md)  
 <br><br>
 
-<center><img src="html6.png" width="40%"></center>
+<center><img src="html6.png" width="40%"></center>  
 
 ### Build and install HTML 6 and CSS 4 from sources
-Apple MacOS (M1/M2) and Intel: `./configure`
-Linux: `./configure`
-Windows: `configure`
+Apple MacOS (M1/M2) and Intel: `./configure`  
+Linux: `./configure`  
+Windows: `configure`  
 
 
 ### Uninstall HTML6 and CSS4

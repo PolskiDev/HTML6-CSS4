@@ -5,19 +5,19 @@ Version 4.0<br>
 <center><img src="css4.png" width="40%"></center>
 
 ### Build from sources
-Apple MacOS (M1/M2) and Intel: `./configure`
-Linux: `./configure`
-Windows: `configure`
+Apple MacOS (M1/M2) and Intel: `./configure`  
+Linux: `./configure`  
+Windows: `configure`  
 
 ### Uninstall HTML6 and CSS4
-Apple MacOS (M1/M2) and Intel: `./uninstall`
-Linux: `./uninstall`
-Windows: `uninstall`
+Apple MacOS (M1/M2) and Intel: `./uninstall`  
+Linux: `./uninstall`  
+Windows: `uninstall`  
 
 
 ### Compile to CSS 3
-Compile to CSS 3: `css4c style.css4 -o style`
-Show generated AST: `css4c style.css4 -ast`
+Compile to CSS 3: `css4c style.css4 -o style`  
+Show generated AST: `css4c style.css4 -ast`  
 
 ### Basic CSS 4 black screen
 ```

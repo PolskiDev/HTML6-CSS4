@@ -1,0 +1,45 @@
+html
+    head
+        title content="Window"
+        @import type="css" url="test.css"
+        @import type="javascript" url="test.js"
+
+    endhead
+    body
+        (d2) div class="low-high"
+            (l2) p class="this.low this.high" content="Hello world"
+            (i1) h1 content="Hello world"
+        enddiv
+
+        (r3) link href="#" class="ll" content="Click here"
+
+        (a4) link href="#" class="lv"
+            text content="Here"
+        endlink
+
+
+        (id) input class="tf" type="text"
+        (img) img src="html6.png" w="30%" h="50%" class="imgsrc-delta"
+
+
+        orlist
+            ...
+        endorlist
+        
+        unlist
+            item class="ily"
+
+            enditem
+        endunlist
+
+
+        form action="s.js" method="POST"
+            label
+            endlabel
+
+            submit class="-d" content="Send"
+        endform
+
+    endbody
+
+endhtml

@@ -1,0 +1,22 @@
+html
+    head
+        title content="Window"
+        @import type="css" url="test.css"
+        @import type="javascript" url="test.js"
+
+    endhead
+    body
+        div class="low-high"
+            p class="this.low this.high" content="Hello world"
+            h1 content="Hello world"
+        enddiv
+
+        link href="#" class="ll" content="Click here"
+
+        link href="#" class="lv"
+            text content="Here"
+        endlink
+
+    endbody
+
+endhtml

@@ -1,0 +1,26 @@
+html
+    head
+        title content="HTML 6"
+    endhead
+
+    body
+        center
+            h1 content="Hello world"
+            break
+
+            (vid) video href="video.mp4" type="mp4" width="80%"
+
+            (f1) section
+                table
+                    row
+                        (hr1) header content="Alphabet"
+                    endrow
+                    row
+                        (dt1) data content="ABC"
+                    endrow
+                endtable
+            endsection
+
+        endcenter
+    endbody
+endhtml

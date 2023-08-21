@@ -1,0 +1,14 @@
+html
+    head
+        title content="Window"
+        @import type="css" url="d.css"
+        @import type="javascript" url="d.js"
+
+    endhead
+    body
+        p class="this.low this.high" content="Hello world"
+        h1 content="Hello world"
+
+    endbody
+
+endhtml

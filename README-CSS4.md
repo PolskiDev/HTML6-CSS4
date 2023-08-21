@@ -16,7 +16,7 @@ Windows: `uninstall`
 
 
 ### Compile to CSS 3
-Compile to CSS 3: `css4c style.css4 -o index`
+Compile to CSS 3: `css4c style.css4 -o style`
 Show generated AST: `css4c style.css4 -ast`
 
 ### Basic CSS 4 black screen

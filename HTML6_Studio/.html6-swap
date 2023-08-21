@@ -1,0 +1,14 @@
+html
+    head
+        title content="Title"
+    endhead
+
+    body
+        h1 content="Hello world"
+    endbody
+endhtml
+
+
+
+
+

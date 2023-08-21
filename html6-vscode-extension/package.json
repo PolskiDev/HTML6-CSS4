@@ -1,0 +1,26 @@
+{
+    "name": "htmlsix",
+    "displayName": "HTML 6",
+    "description": "A simplified HTML",
+    "version": "0.1",
+    "icon": "./html6.png",
+    "engines": {
+        "vscode": "^1.60.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "htmlsix",
+            "aliases": ["HTML 6", "htmlsix"],
+            "extensions": [".html6"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "htmlsix",
+            "scopeName": "source.html6",
+            "path": "./syntaxes/html6.tmLanguage.json"
+        }]
+    }
+}

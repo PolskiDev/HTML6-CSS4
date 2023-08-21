@@ -1,0 +1,3 @@
+#!/bin/bash
+# npm run uninstall-unix
+sudo npm uninstall -g html6-css4

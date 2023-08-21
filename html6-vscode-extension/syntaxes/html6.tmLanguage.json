@@ -1,0 +1,86 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "A simplified HTML",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#numbers"
+		},
+        {
+            "include": "#storage"
+        }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.htmlsix",
+				"match": "\\b(html|head|body|endhtml|endbody|endhead|title|link|h1|h2|h3|h4|h5|p|img|div|nav|enddiv|endnav|form|endform|input|orlist|unlist|endorlist|endunlist|item|enditem|import|text)\\b"
+			}]
+		},
+		"comments": {
+            "patterns": [{
+                "name": "comment.block.documentation.htmlsix",
+                "begin": "//",
+                "beginCaptures": {
+                    "0": {
+                        "name": "punctuation.definition.comment.begin.htmlsix"
+                    }
+                },
+                "end": "\n",
+                "endCaptures": {
+                    "0": {
+                        "name": "punctuation.definition.comment.end.htmlsix"
+                    }
+                },
+                "patterns": [{
+                    "include": "#comments"
+            	}]
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.htmlsix",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.htmlsix",
+					"match": "\\\\."
+				}
+			]
+		},
+		"numbers": {
+            "patterns": [{
+                "name": "constant.numeric.exponential.htmlsix",
+                "match": "([0-9]+(_?))+(\\.)([0-9]+[eE][-+]?[0-9]+)"
+            }, {
+                "name": "constant.numeric.float.htmlsix",
+                "match": "([0-9]+(_?))+(\\.)([0-9]+)"
+            }, {
+                "name": "constant.numeric.binary.htmlsix",
+                "match": "(?:0b)(?:(?:[0-1]+)(?:_?))+"
+            }, {
+                "name": "constant.numeric.octal.htmlsix",
+                "match": "(?:0o)(?:(?:[0-7]+)(?:_?))+"
+            }, {
+                "name": "constant.numeric.hex.htmlsix",
+                "match": "(?:0x)(?:(?:[0-9a-fA-F]+)(?:_?))+"
+            }, {
+                "name": "constant.numeric.integer.htmlsix",
+                "match": "(?:(?:[0-9]+)(?:[_]?))+"
+            }]
+        },
+        "storage": {
+            "name": "storage.modifier.htmlsix",
+            "match": "\\b(content|class|type|url|src|width|height|action|method|href|center|label)\\b"
+        }
+	},
+	"scopeName": "source.html6"
+}

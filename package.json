@@ -1,0 +1,20 @@
+{
+  "name": "html6-css4",
+  "version": "6.0/4.0",
+  "description": "HTML 6 and CSS 4 languages",
+  "scripts": {
+    "configure-unix-html6": "sudo cp -Rfv html6c /usr/local/bin/html6c && sudo cp -Rfv html6-libs /usr/local/bin/html6-libs",
+    "configure-unix-css4": "sudo cp -Rfv css4c /usr/local/bin/css4c && sudo cp -Rfv css4-libs /usr/local/bin/css4-libs",
+    "uninstall-unix": "sudo rm -Rfv /usr/local/bin/css4c /usr/local/bin/css4-libs /usr/local/bin/html6c /usr/local/bin/html6-libs"
+  },
+  "keywords": [],
+  "author": "Gabriel Margarido",
+  "license": "MIT",
+  "bin": {
+    "html6c": "./html6c.js",
+    "html6c-libs": "./html6-libs",
+
+    "css4c": "./css4c.js",
+    "css4-libs": "./css4-libs"
+  }
+}

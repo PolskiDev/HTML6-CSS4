@@ -79,7 +79,7 @@
         },
         "storage": {
             "name": "storage.modifier.htmlsx",
-            "match": "\\b(p|h1|h2|h3|h4|h5|px|center|bold|italic|normal|link|endlink|img|input|orlist|unlist|endorlist|endunlist|item|enditem|import|alignment|text-color|bg-color|font-weight|font|margin-all|margin-top|margin-bottom|margin-left|margin-right|padding-all|padding-top|padding-bottom|padding-left|padding-right|max-width|max-height|bg-img|content|class|type|url|src|width|height|action|method|href|center|right|left|normal|endcenter|label|text)\\b"
+            "match": "\\b(p|h1|h2|h3|h4|h5|px|center|bold|italic|normal|link|endlink|img|input|orlist|unlist|endorlist|endunlist|item|enditem|import|alignment|text-color|bg-color|font-weight|font|margin-all|margin-top|margin-bottom|margin-left|margin-right|padding-all|padding-top|padding-bottom|padding-left|padding-right|max-width|max-height|bg-img|content|class|type|url|src|width|height|action|method|href|center|right|left|normal|endcenter|label|text|break)\\b"
         }
 	},
 	"scopeName": "source.htmlsx"

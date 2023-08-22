@@ -16,7 +16,8 @@ Copy HTML 6 / CSS 4 VSCode extension `./html6-vse` to:
 <center><img src="html6.png" width="40%"></center>  
 
 ### Build and install HTML 6 and CSS 4 from sources
-Apple MacOS (M1/M2) and Intel: `./configure`  
+Apple MacOS Intel: `./configure`
+Apple MacOS (M1/M2): `./configure-aarch64`  
 Linux: `./configure`  
 Windows: `configure`  
 
@@ -145,6 +146,8 @@ Syntax:
 ```
     input type="text"
     input type="text" class="example-class"
+
+    input type="button" class="example-class" content="Click me"
 ```
 
 #### Creating DIVs
@@ -244,3 +247,101 @@ And inside your javascript file,
 use: `let x = window.document.getElementById('...')`  
 or: `let y = window.document.getElementsByClass('...')`  
 and make references using arrays: `let y = window.document.getElementsByClass('...')[i]`
+<br>  
+<br>
+  
+  
+# Javascript events on HTML 6
+Mix the better of HTML 6 with the better of Javascript, including: events, properties and CSS 3 properties.  
+  
+  
+<img src="js.png" width="250px" height="250px"><br>
+
+**Replace `element_id` with corresponding element id**  
+
+In the following case: `(photox) img src="foo.png" width="250px" height="250px"`, **`element_id`** is **`photox`**.  
+<br>
+<br>
+
+#### HTML 6 element onclick attribute
+
+```
+document.getElementById("element_id").onclick = function() {
+    // ONCLICK EVENT HERE
+    ...
+}
+```
+
+### HTML 6 element when mouse enter attribute
+```
+document.getElementById("element_id").addEventListener("onmouseenter", function() {
+    // ON MOUSE ENTER EVENT HERE
+    ...
+})
+```
+
+```
+document.getElementById("element_id").onmouseenter = function() {
+    // ON MOUSE ENTER EVENT HERE
+    ...
+}
+```
+
+### HTML 6 element when any mouse button is clicked attribute
+```
+document.getElementById("element_id").onmousedown = function() {
+    // ON MOUSE DOWN EVENT HERE
+    ...
+};
+```
+
+### HTML 6 element when mouse leaves attribute
+```
+document.getElementById("element_id").onmouseleave = function() {
+    // ON MOUSE DOWN EVENT HERE
+    ...
+};
+```
+
+### HTML 6 element when mouse moves attribute
+```
+document.getElementById("element_id").onmousemove = function() {
+    // ON MOUSE MOVE EVENT HERE
+    ...
+};
+```
+
+### HTML 6 element when mouse out attribute
+```
+document.getElementById("element_id").onmouseout = function() {
+    // ON MOUSE OUT EVENT HERE
+    ...
+};
+```
+
+### HTML 6 element when mouse button is released attribute
+```
+document.getElementById("element_id").onmouseup = function() {
+    // ON MOUSE UP EVENT HERE
+    ...
+};
+```
+
+### HTML 6 element right-click attribute
+```
+document.getElementById("element_id").addEventListener("contextmenu", function() {
+    // RIGHT-CLICK EVENT HERE
+    ...
+})
+```
+
+### HTML 6 element double-click attribute
+```
+document.getElementById("element_id").addEventListener("dblclick", function() {
+    // DOUBLE-CLICK EVENT HERE
+    ...
+})
+```
+
+
+

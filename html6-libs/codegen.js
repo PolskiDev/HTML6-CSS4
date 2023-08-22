@@ -228,7 +228,19 @@ function CodeGen(input, output, mode='normal') {
         }
 
         else if (codegen[i].type == 'input') {
-            fs.appendFileSync(output, `<input type=${codegen[i].typex} class=${codegen[i].class}>`)
+            if (codegen[i].id) {
+                if (codegen[i].value) {
+                    fs.appendFileSync(output, `<input id="${codegen[i].id}" type=${codegen[i].typex} class=${codegen[i].class} value=${codegen[i].value}>`)
+                } else {
+                    fs.appendFileSync(output, `<input id="${codegen[i].id}" type=${codegen[i].typex} class=${codegen[i].class} value=${codegen[i].value}>`)
+                }
+            } else {
+                if (codegen[i].value) {
+                    fs.appendFileSync(output, `<input type=${codegen[i].typex} class=${codegen[i].class} value=${codegen[i].value}>`)
+                } else {
+                    fs.appendFileSync(output, `<input type=${codegen[i].typex} class=${codegen[i].class}>`)
+                }
+            }
         }
 
         else if (codegen[i].type == 'label') {

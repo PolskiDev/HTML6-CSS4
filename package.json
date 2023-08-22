@@ -3,8 +3,8 @@
   "version": "6.0/4.0",
   "description": "HTML 6 and CSS 4 languages",
   "scripts": {
-    "configure-unix-html6": "sudo cp -Rfv html6c /usr/local/bin/html6c && sudo cp -Rfv html6-libs /usr/local/bin/html6-libs",
-    "configure-unix-css4": "sudo cp -Rfv css4c /usr/local/bin/css4c && sudo cp -Rfv css4-libs /usr/local/bin/css4-libs",
+    "configure-unix-html6": "sudo cp -Rfv html6c.js /usr/local/bin/html6c && sudo cp -Rfv html6-libs /usr/local/bin/html6-libs",
+    "configure-unix-css4": "sudo cp -Rfv css4c.js /usr/local/bin/css4c && sudo cp -Rfv css4-libs /usr/local/bin/css4-libs",
     "uninstall-unix": "sudo rm -Rfv /usr/local/bin/css4c /usr/local/bin/css4-libs /usr/local/bin/html6c /usr/local/bin/html6-libs"
   },
   "keywords": [],

@@ -91,7 +91,7 @@ font = font_name+' '+str(font_size)
 
 # Define a list of Regex Pattern that should be colored in a certain way
 repl = [
-    ['(.document|html|head|body|endhtml|endbody|endhead|title|div|nav|enddiv|endnav|form|endform|hover|visited|active)', keywords],
+    ['(.document|html|head|body|endhtml|endbody|endhead|title|div|nav|enddiv|endnav|form|endform|hover|visited|active|break)', keywords],
     ['".*?"', string],
     ['\'.*?\'', string],
     #['//.*?$', comments],

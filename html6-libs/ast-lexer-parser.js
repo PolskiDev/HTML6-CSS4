@@ -579,8 +579,9 @@ function GenerateAST(input) {
                     id = stack[i-1].slice(1,-1)
                 }
 
-                let classx = stack[i+2]
-                let typex = stack[i+4]
+                let classx = stack[i+4]
+                let typex = stack[i+2]
+                let val = stack[i+6]
 
                 // LOGIC
                 if (stack[i+1] == token_table.tokens.class_key) {
@@ -589,14 +590,18 @@ function GenerateAST(input) {
                         typex: typex,
                         type: 'input',
                         class: classx,
-                        id: id
+                        id: id,
+                        value: val
                     }
                     json.push(data)
                 } else {
                     let data = {
                         token: token_table.tokens.input,
                         typex: typex, 
-                        type: 'input'
+                        type: 'input',
+                        class: classx,
+                        id: id,
+                        value: val
                     }
                     json.push(data)
                 }

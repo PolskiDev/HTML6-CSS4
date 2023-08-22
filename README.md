@@ -292,7 +292,7 @@ document.getElementById("element_id").onmouseenter = function() {
 document.getElementById("element_id").onmousedown = function() {
     // ON MOUSE DOWN EVENT HERE
     ...
-};
+}
 ```
 
 ### HTML 6 element when mouse leaves attribute
@@ -300,7 +300,7 @@ document.getElementById("element_id").onmousedown = function() {
 document.getElementById("element_id").onmouseleave = function() {
     // ON MOUSE DOWN EVENT HERE
     ...
-};
+}
 ```
 
 ### HTML 6 element when mouse moves attribute
@@ -308,7 +308,7 @@ document.getElementById("element_id").onmouseleave = function() {
 document.getElementById("element_id").onmousemove = function() {
     // ON MOUSE MOVE EVENT HERE
     ...
-};
+}
 ```
 
 ### HTML 6 element when mouse out attribute
@@ -316,7 +316,7 @@ document.getElementById("element_id").onmousemove = function() {
 document.getElementById("element_id").onmouseout = function() {
     // ON MOUSE OUT EVENT HERE
     ...
-};
+}
 ```
 
 ### HTML 6 element when mouse button is released attribute
@@ -324,7 +324,7 @@ document.getElementById("element_id").onmouseout = function() {
 document.getElementById("element_id").onmouseup = function() {
     // ON MOUSE UP EVENT HERE
     ...
-};
+}
 ```
 
 ### HTML 6 element right-click attribute

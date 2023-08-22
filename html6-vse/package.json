@@ -1,7 +1,7 @@
 {
   "name": "html6",
   "displayName": "HTML6",
-  "description": "example2",
+  "description": "HTML 6 and CSS 4 VSCode Extension - Syntax Highlight",
   "version": "0.0.1",
   "icon": "./html6.png",
   "engines": {
@@ -14,7 +14,7 @@
     "languages": [{
       "id": "htmlsx",
       "aliases": ["HTML6 / CSS4 Languages", "htmlsx"],
-      "extensions": [".html6"],
+      "extensions": [".html6", ".css4"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{

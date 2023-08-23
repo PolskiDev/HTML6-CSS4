@@ -16,16 +16,16 @@ Copy HTML 6 / CSS 4 VSCode extension `./html6-vse` to:
 <center><img src="html6.png" width="40%"></center>  
 
 ### Build and install HTML 6 and CSS 4 from sources
-Apple MacOS Intel: `./configure`
-Apple MacOS (M1/M2): `./configure-aarch64`  
-Linux: `./configure`  
-Windows: `configure`  
+Apple MacOS Intel: `./configure`  
+Apple MacOS (M1/M2): `./configure-aarch64`    
+Linux: `./configure`   
+Windows: `configure`   
 
 
 ### Uninstall HTML6 and CSS4
-Apple MacOS (M1/M2) and Intel: `./uninstall`
-Linux: `./uninstall`
-Windows: `uninstall`
+Apple MacOS (M1/M2) and Intel: `./uninstall`  
+Linux: `./uninstall`  
+Windows: `uninstall`  
 
 
 ### Compile to HTML 5

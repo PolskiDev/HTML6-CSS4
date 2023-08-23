@@ -53,7 +53,9 @@ let tokens = {
     src_key: "src=",
     action_key: "action=",
     method_key: "method=",
-    id_key: '()'    //ID FIRST AND LAST CHARACTERS
+    id_key: '()',    //ID FIRST AND LAST CHARACTERS
+
+    undefined_value_input: 'undef'
 }
 
 

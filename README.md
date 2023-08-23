@@ -117,6 +117,8 @@ endhtml
 
 
 #### Adding input types
+**The use of attribute `class=xxx` is strongly recommended, in order to avoid compilation errors**
+
 Some input types atr:
 ```
 type="button"
@@ -144,9 +146,8 @@ type="week"
 
 Syntax:  
 ```
-    input type="text"
     input type="text" class="example-class"
-
+    input type="password" class="example-class"
     input type="button" class="example-class" content="Click me"
 ```
 

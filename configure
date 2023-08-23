@@ -1,4 +1,5 @@
 #!/bin/bash
+./uninstall
 
 # npm run configure-unix-html6
 # npm run configure-unix-css4

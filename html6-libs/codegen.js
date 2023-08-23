@@ -232,7 +232,7 @@ function CodeGen(input, output, mode='normal') {
                 if (codegen[i].value) {
                     fs.appendFileSync(output, `<input id="${codegen[i].id}" type=${codegen[i].typex} class=${codegen[i].class} value=${codegen[i].value}>`)
                 } else {
-                    fs.appendFileSync(output, `<input id="${codegen[i].id}" type=${codegen[i].typex} class=${codegen[i].class} value=${codegen[i].value}>`)
+                    fs.appendFileSync(output, `<input id="${codegen[i].id}" type=${codegen[i].typex} class=${codegen[i].class}>`)
                 }
             } else {
                 if (codegen[i].value) {
@@ -320,6 +320,22 @@ function CodeGen(input, output, mode='normal') {
         }
         else if (codegen[i].type == 'endtable') {
             fs.appendFileSync(output, `</table>`)
+        }
+
+        else if (codegen[i].type == 'img') {
+            if (codegen[i].id) {
+                if (codegen[i].class) {
+                    fs.appendFileSync(output, `<img id="${codegen[i].id}" src=${codegen[i].src} width=${codegen[i].width} height=${codegen[i].height} class=${codegen[i].class}>`)
+                } else {
+                    fs.appendFileSync(output, `<img id="${codegen[i].id}" src=${codegen[i].src} width=${codegen[i].width} height=${codegen[i].height}>`)
+                }
+            } else {
+                if (codegen[i].class) {
+                    fs.appendFileSync(output, `<img src=${codegen[i].src} width=${codegen[i].width} height=${codegen[i].height} class=${codegen[i].class}>`)
+                } else {
+                    fs.appendFileSync(output, `<img src=${codegen[i].src} width=${codegen[i].width} height=${codegen[i].height}>`)
+                }
+            }
         }
 
         else if (codegen[i].type == 'section') {

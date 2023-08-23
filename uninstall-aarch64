@@ -1,0 +1,3 @@
+#!/bin/bash
+# npm run uninstall-unix
+sudo npm run uninstall-unix

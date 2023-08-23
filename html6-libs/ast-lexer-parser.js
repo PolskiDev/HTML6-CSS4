@@ -584,17 +584,7 @@ function GenerateAST(input) {
                 let val = stack[i+6]
 
                 // LOGIC
-                if (stack[i+1] == token_table.tokens.class_key) {
-                    let data = {
-                        token: token_table.tokens.input,
-                        typex: typex,
-                        type: 'input',
-                        class: classx,
-                        id: id,
-                        value: val
-                    }
-                    json.push(data)
-                } else {
+                if (stack[i+3] == token_table.tokens.class_key && stack[i+5] == token_table.tokens.content_key) {
                     let data = {
                         token: token_table.tokens.input,
                         typex: typex, 
@@ -602,6 +592,16 @@ function GenerateAST(input) {
                         class: classx,
                         id: id,
                         value: val
+                    }
+                    json.push(data)
+
+                } else if (stack[i+3] == token_table.tokens.class_key && stack[i+5] == undefined) {
+                    let data = {
+                        token: token_table.tokens.input,
+                        typex: typex, 
+                        type: 'input',
+                        class: classx,
+                        id: id
                     }
                     json.push(data)
                 }

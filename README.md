@@ -23,7 +23,8 @@ Windows: `configure`
 
 
 ### Uninstall HTML6 and CSS4
-Apple MacOS (M1/M2) and Intel: `./uninstall-aarch64`  
+Apple MacOS Intel: `./uninstall`  
+Apple MacOS (M1/M2): `./uninstall-aarch64`  
 Linux: `./uninstall`  
 Windows: `uninstall`  
 
